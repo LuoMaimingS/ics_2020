@@ -1,0 +1,16 @@
+make[1]: Entering directory '/home/yard/pa2020_spring'
+scripts/validate.mk:2: yard
+scripts/validate.mk:10: "Make Validation Pass"
+cd nemu && make
+make[2]: Entering directory '/home/yard/pa2020_spring/nemu'
+make[2]: 'nemu' is up to date.
+make[2]: Leaving directory '/home/yard/pa2020_spring/nemu'
+cd testcase && make
+make[2]: Entering directory '/home/yard/pa2020_spring/testcase'
+gcc -ggdb3 -MMD -MP -Wall -m32 -march=i386 -fno-builtin -fno-stack-protector -I../include -I../libs/newlib/include -c -o src/start.o start.S	
+make[2]: Leaving directory '/home/yard/pa2020_spring/testcase'
+cd kernel && make
+make[2]: Entering directory '/home/yard/pa2020_spring/kernel'
+make[2]: 'kernel' is up to date.
+make[2]: Leaving directory '/home/yard/pa2020_spring/kernel'
+make[1]: Leaving directory '/home/yard/pa2020_spring'
